@@ -78,4 +78,4 @@ def predict_batch():
     return jsonify(output_dict)
 
 if __name__ == '__main__':
-    superkart_model_api.run(debug=True)
+    superkart_model_api.run(host='0.0.0.0', port=8000, debug=True)
